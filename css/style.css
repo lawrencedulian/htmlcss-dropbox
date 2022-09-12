@@ -31,6 +31,19 @@ ul li {
     display: inline-block;
 }
 
+header a {
+    text-decoration: none;
+    color: gray;
+}
+
+.btn {
+    background-color: #0061FF ;
+    color: white;
+    padding: 15px;
+    text-align: center;
+
+}
+
 h1 {
     padding: 50px 0;
     font-size: 3rem;
@@ -42,16 +55,9 @@ h2 {
 }
 
 /* HEADER TOP*/
-
 .header_top {
     height: 80px;
-    background-color: bisque;
-}
-
-.header_top .container {
-    height: 40px;
-    background-color: brown;
-    justify-content: center;
+    background-color: white;
 }
 
 .h_logo {
@@ -59,7 +65,15 @@ h2 {
 }
 
 .h_menu {
+    display: flex;
+}
+
+.left_menu {
     
+}
+
+.left_menu .right_menu {
+    justify-content: space-between;
 }
 
 .h_actions {
@@ -69,31 +83,42 @@ h2 {
 /* HEADER BOTTOM */
 .header_bottom {
     padding: 40px 100px 20px 100px;
-    background-color: lightblue;
+    background-color: #B4D0E7;
 }
 
 .jumbotron {
-    height: 400px;
-    background-color: lightblue;
+    height: 500px;
+    background-color: #B4D0E7;
 }
 
 .dockleft {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 30%;
-    background-color: lightcoral;
+    max-height: 300px;
+}
+
+.dockleft p {
+    font-size: 1rem;
+}
+
+.dockleft a {
+    margin-bottom: 40px;
 }
 
 .dockright {
     width: 70%;
-    max-height: 500px ;
-    background-color: beige;
+    max-height: 700px;
 }
 
-.jumbo_img {
-    
+.dockright img {
+    position: relative;
+    top: 0;
+    bottom: 0;
 }
 
 /* MAIN */
-
 .subscriptions {
     justify-content: space-between;
 }
