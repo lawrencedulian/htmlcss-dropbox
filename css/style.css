@@ -8,4 +8,80 @@ html {
     font-family: 'Open Sans', sans-serif;
 }
 
+img {
+    width: 100%;
+}
 
+/* COMMON */
+.container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.flex-container {
+    display: flex;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    display: inline-block;
+}
+
+h1 {
+    padding: 50px 0;
+    font-size: 3rem;
+}
+
+/* HEADER TOP*/
+
+.header_top {
+    height: 80px;
+    background-color: bisque;
+}
+
+.header_top .container {
+    height: 40px;
+    background-color: brown;
+    justify-content: center;
+}
+
+.logo {
+
+}
+
+.menu {
+    
+}
+
+.actions {
+
+}
+
+/* HEADER BOTTOM */
+.header_bottom {
+    background-color: lightblue;
+}
+
+.jumbotron {
+    height: 400px;
+    background-color: lightblue;
+}
+
+.dockleft {
+    width: 30%;
+    background-color: lightcoral;
+}
+
+.dockright {
+    width: 70%;
+    max-height: 500px ;
+    background-color: beige;
+}
+
+.jumbo_img {
+    
+}
