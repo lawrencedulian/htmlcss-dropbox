@@ -62,12 +62,19 @@ ul {
     text-decoration: none;
 }
 
+.btn-white {
+    background-color: white;
+    padding: 1em;
+    display: inline-block;
+    line-height: normal;
+    text-decoration: none;
+}
+
 h1 {
     font-size: 3rem;
 }
 
 h2 {
-    /* padding: 50px 0; */
     font-size: 2rem;
 }
 
@@ -84,13 +91,69 @@ h2 {
     align-items: center;
 }
 
+.check::before {
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f00c";
+    color: #0061FF;
+}
+
+.padding-top1 {
+    padding-top: 1em;
+}
+
+.padding-top2 {
+    padding-top: 2em;
+}
+
+.padding-top3 {
+    padding-top: 3em;
+}
+
+/* UTILITY COLOR */
 .color-gray {
     color: gray;
 }
 
-.check::before {
-    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f00c";
-    color: #0061FF;
+.border-green {
+    border: 10px solid #D1E9CD;
+}
+.bg-green {
+    background-color: #A2D39B;
+}
+
+.bg-bordeaux {
+    background-color: #61082B;
+}
+
+.cl-bordeaux {
+    color: #61082B;
+}
+
+.bg-bluesky {
+    background-color: #0093CE;
+}
+
+.bg-red {
+    background-color: #FF1C1C;
+}
+
+.bg-darkred {
+    background-color: #D5001F;
+}
+
+.bg-lightsky {
+    background-color: #B4D0E7;
+}
+
+.bg-blue {
+    background-color: #0D2481;
+}
+
+.bg-yellow {
+    background-color: #FFD830;
+}
+
+.bg-lightgray {
+    background-color: #F5F5F5;
 }
 
 /* HEADER*/
@@ -116,7 +179,7 @@ header ul li {
 .menu {
     justify-content: space-between;
     line-height: 80px;
-} 
+}
 
 .menu li:not(:last-child) {
     margin-right: 2em;
@@ -125,11 +188,11 @@ header ul li {
 /* MAIN */
 .maintop {
     background-color: #B4D0E7;
-    max-height: 580px;
+    padding-top: 3em;
 }
 
 .jumbotron {
-    height: 300px;
+    max-height: 800px;
 }
 
 .jumbotron .dock30 {
@@ -138,12 +201,21 @@ header ul li {
     justify-content: space-between;
 }
 
+.jumbotron h1 {
+    margin-bottom: 1em;
+}
+
+.jumbotron p {
+    margin-bottom: 2em;
+}
+
 .jumbotron a {
     text-decoration: none;
+    margin-bottom: 3em;
 }
 
 .subscriptions {
-    margin-top: 10em;
+    margin-top: 5em;
 }
 
 .fatturazione {
@@ -162,10 +234,6 @@ header ul li {
     border-bottom: 1px solid gray;
     text-align: center;
     padding: 10px;
-}
-
-.plans {
-    justify-content: space-between;
 }
 
 .nameplan, .info, .included {
@@ -209,6 +277,7 @@ header ul li {
     margin-right: 0.5em;
 }
 
+/* CARD-ROW */
 .card-row {
     width: 100%;
     border: 1px solid gray;
@@ -219,6 +288,7 @@ header ul li {
     margin-top: 1em;
 }
 
+/* PARTNER */
 .partner {
     margin-top: 8em;
 }
@@ -231,6 +301,7 @@ header ul li {
     padding: 2em 0;
 }
 
+/* BUSINESS */
 .business {
     flex-wrap: wrap;
     justify-content: space-between;
@@ -246,40 +317,68 @@ header ul li {
 }
 
 .big-text {
-    min-height: 400px;
-    margin: 4em 0px
+    min-height: 300px;
+    margin: 5em 0px
 }
 
 .big-text h3 {
     font-size: 2.5em;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 
-.square {
-    max-width: 600px;
-    /* DEBUG */
-    height: 600px;
-    background-color: crimson;
-    border: 1px solid black;
-}
-
-
-.square2 {
-    max-width:  250px;
-    max-height: 249px;
-    background-color: chartreuse;
-    border: 1px solid black;
-}
-
-.partnership {
+.col {
+    width: calc(100% / 3);
     display: flex;
     flex-wrap: wrap;
 }
 
+.square {
+    width: 50%;
+    padding: 2em;
+    align-items: center;
+    align-items: stretch;
+}
+
+.square img {
+    filter: invert(1);
+    width: 90%;
+}
+
+.square-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2em
+}
+
+.square-center img {
+    width: 60%;
+}
+
+.row .container2 {
+    min-height: 300px;
+    align-items: center;
+}
+
+.row h3 {
+    font-size: 1.5em;
+}
+
+.row a {
+    color: black;
+}
+
 .faq {
-    width: 100%;
-    height: 500px;
-    color: whitesmoke;
+    padding: 8em;
+}
+
+.faq h3 {
+    font-size: 2rem;
+    margin-bottom: 1.2em;
+}
+
+.questions {
+    margin: 2em 0px 2em;
 }
 
 /* FOOTER */
@@ -323,3 +422,4 @@ footer hr {
 .lang {
     color: gray;
 }
+
