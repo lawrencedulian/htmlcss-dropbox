@@ -6,6 +6,7 @@
 
 html {
     font-family: 'Open Sans', sans-serif;
+    font-size: 100%;
 }
 
 img {
@@ -18,29 +19,25 @@ img {
     max-width: 1000px;
     min-width: 900px;
     margin: 0 auto;
-    /* DEBUG */
-    border: 1px solid RED;
 }
 
 .container2 {
-    width: 80%;
+    width: 70%;
     max-width: 900px;
     min-width: 800px;
     margin: 0 auto;
-    /* DEBUG */
-    border: 1px solid yellowgreen;
 }
 
-.dockleft {
+.dock30 {
     width: 30%;
-    
-    /* DEBUG */
-    min-height: 300px;
-    background-color: aqua;
 }
 
-.dockright {
+.dock70 {
     width: 70%;
+}
+
+.card {
+    width: calc(100% / 3 - 20px);
 }
 
 ul {
@@ -60,6 +57,17 @@ header a {
     background-color: #0061FF ;
     color: white;
     padding: 1em;
+    display: inline-block;
+    line-height: normal;
+}
+
+.btn-white {
+    background-color: white;
+    color: gray;
+    padding: 1em;
+    display: inline-block;
+    line-height: normal;
+    border: 1px solid gray;
 }
 
 h1 {
@@ -74,6 +82,27 @@ h2 {
 /* UTILITY */
 .flex-container {
     display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.alignitems-center {
+    align-items: center;
+}
+
+.color-gray {
+    color: gray;
+}
+
+.check::before {
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f00c";
+    color: #0061FF;
+}
+
+.margin-top10 {
+    margin-top: 10px;
 }
 
 /* HEADER*/
@@ -103,74 +132,131 @@ h2 {
 
 .jumbotron {
     height: 300px;
-    border: 1px solid black;
 }
 
-.jumbotron .dockleft {
+.jumbotron .dock30 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .subscriptions {
-    margin-top: 100px;
+    margin-top: 10em;
+}
+
+.fatturazione {
+    margin: 3em 0px;
 }
 
 .plans {
     justify-content: space-between;
 }
 
-.card {
-    height: 200px;
-    width: calc(100% / 3 - 10px);
-    border: 1px solid black;
+.plans .card {
+    border: 1px solid gray;
 }
 
+.type {
+    border-bottom: 1px solid gray;
+    text-align: center;
+    padding: 10px;
+}
 
-.row {
-    height: 200px;
-    background-color: blueviolet;
-    margin-top: 20px;
-    border: 1px solid black;
+.plans {
+    justify-content: space-between;
+}
+
+.nameplan, .info, .included {
+    padding: 1em;
+}
+
+.nameplan h4 {
+    margin-bottom: 1em;
+}
+
+.info ul li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1em;
+}
+
+.info ul i {
+    margin-right: 0.5em;
+}
+
+.info .btn {
+    margin: 1em 0px 1em;
+}
+
+.info hr {
+    width: 20%;
+    margin-top: 2em;
+}
+
+.included h5 {
+    margin-bottom: 1em;
+}
+
+.included ul li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1em;
+}
+
+.included ul span {
+    margin-right: 0.5em;
+}
+
+.card-row {
+    width: 100%;
+    border: 1px solid gray;
+    margin-top: 2em;
+}
+
+.card-row .btn {
+    margin-top: 1em;
 }
 
 .partner {
-    margin-top: 150px;
+    margin-top: 8em;
 }
 
-.partner .dockleft{
-    width: 70%;
-    height: 500px;
-    background-color: darkslategrey;
+.partner .dock30 {
+    padding: 2em;
 }
 
-.partner .dockright {
-    width: 30%;
-    height: 500px;
-    background-color: skyblue;
+.partner.dock30 p {
+    padding: 2em 0;
 }
 
 .business {
     flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 2em;
 }
 
-.business .col {
-    width: calc(100% / 3 - 20px) ;
-    height: 400px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    background-color: aquamarine;
+.business h3 {
+    margin-bottom: 2em;
+}
+
+.business .card {
+    margin-top: 1em;
 }
 
 .big-text {
-    width: 100%;
-    height: 400px;
-    margin: 50px 0;
-    background-color: blanchedalmond;
+    min-height: 400px;
+    margin: 4em 0px
+}
+
+.big-text h3 {
+    font-size: 2.5em;
+    margin-bottom: 2em;
 }
 
 .square {
     width: calc(100% / 3);
+    margin-top: ;
+    /* DEBUG */
     height: 400px;
     background-color: crimson;
     border: 1px solid black;
@@ -208,3 +294,4 @@ footer {
     width: calc(100% / 5);
     height: 300px;
 }
+
