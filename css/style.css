@@ -44,15 +44,6 @@ ul {
     list-style-type: none;
 }
 
-ul li {
-    display: inline-block;
-}
-
-header a {
-    text-decoration: none;
-    color: gray;
-}
-
 .btn {
     background-color: #0061FF ;
     color: white;
@@ -61,13 +52,14 @@ header a {
     line-height: normal;
 }
 
-.btn-white {
+.btn-gray {
     background-color: white;
     color: gray;
     padding: 1em;
     display: inline-block;
     line-height: normal;
     border: 1px solid gray;
+    text-decoration: none;
 }
 
 h1 {
@@ -101,14 +93,20 @@ h2 {
     color: #0061FF;
 }
 
-.margin-top10 {
-    margin-top: 10px;
-}
-
 /* HEADER*/
 .header {
     height: 80px;
     background-color: white;
+}
+
+
+header a {
+    text-decoration: none;
+    color: gray;
+}
+
+header ul li {
+    display: inline-block;
 }
 
 .h_logo {
@@ -138,6 +136,10 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.jumbotron a {
+    text-decoration: none;
 }
 
 .subscriptions {
@@ -254,10 +256,9 @@ h2 {
 }
 
 .square {
-    width: calc(100% / 3);
-    margin-top: ;
+    max-width: 600px;
     /* DEBUG */
-    height: 400px;
+    height: 600px;
     background-color: crimson;
     border: 1px solid black;
 }
@@ -291,7 +292,34 @@ footer {
 }
 
 .f_menu {
-    width: calc(100% / 5);
-    height: 300px;
+    display: flex;
+    width: 100%;
 }
 
+.f_menu-col {
+    width: calc(100% / 5);
+    color: white;
+}
+
+.f_menu-col h4 {
+    font-size: 1.5em;
+    padding-bottom: 1em;
+}
+
+.f_menu-col a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.f_menu-col ul li {
+    padding-bottom: 1em;
+}
+
+footer hr {
+    width: 15%;
+    margin: 3em 0px;
+}
+
+.lang {
+    color: gray;
+}
